@@ -1,0 +1,24 @@
+{
+  "feature_cols": [
+    "loc_hash",
+    "hour",
+    "dayofweek",
+    "month",
+    "is_weekend",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "speed_lag_1",
+    "speed_lag_2",
+    "speed_lag_4",
+    "speed_lag_8",
+    "speed_roll_mean_4",
+    "speed_roll_std_4"
+  ],
+  "colmap": {
+    "DateTime": "timestamp",
+    "Location": "location_id",
+    "Speed": "speed"
+  }
+}
