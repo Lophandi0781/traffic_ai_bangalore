@@ -1,6 +1,7 @@
 from fastapi import FastAPI
-from .schemas import PredictRequest, PredictResponse
-from .model import TrafficModel
+from schemas import PredictRequest, PredictResponse
+from model import TrafficModel
+
 
 
 app = FastAPI(title="Bangalore Traffic AI Predictor", version="1.0")
