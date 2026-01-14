@@ -4,7 +4,7 @@ import folium
 from streamlit_folium import st_folium
 from datetime import datetime, date, time
 
-st.set_page_config(page_title="Bangalore Traffic AI", layout="wide")
+st.set_page_config(page_title="PathPioneer.blr", layout="wide")
 
 API = st.sidebar.text_input(
     "Backend API URL",
