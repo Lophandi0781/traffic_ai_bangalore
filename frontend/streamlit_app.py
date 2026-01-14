@@ -6,7 +6,11 @@ from datetime import datetime, date, time
 
 st.set_page_config(page_title="Bangalore Traffic AI", layout="wide")
 
-API = st.sidebar.text_input("Backend API URL", "http://localhost:8000")
+API = st.sidebar.text_input(
+    "Backend API URL",
+    "https://traffic-ai-bangalore.onrender.com"
+)
+
 
 st.title("🚦 Bangalore Traffic AI Predictor")
 
@@ -44,6 +48,7 @@ with left:
 
         try:
             r = requests.post(f"{API}/predict", json=payload, timeout=10)
+
             if r.status_code != 200:
                 st.error(r.text)
             else:
